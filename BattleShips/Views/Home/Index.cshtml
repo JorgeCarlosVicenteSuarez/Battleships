@@ -1,0 +1,32 @@
+﻿<div ng-controller="gameController">
+    <h1>{{labels.title}}</h1>
+
+    <section layout="row" layout-align="center center" layout-wrap>
+        <md-button class="md-raised md-primary" ng-click="initGame()">{{labels.initGame}}</md-button>
+    </section>
+    <section layout="row" layout-align="center center">
+        <section layout="column" flex="25" layout-align="left center">
+        </section>
+        <section layout="column" flex="25" layout-align="right center">
+            <grid class="user" table="$root.models.Player.Grid"></grid>
+            <ul>
+                <li class="title">{{labels.yourShips}}</li>
+                <li ng-repeat="ship in $root.models.Player.Ships"
+                    ng-class="{ 'sunk': ship.Sunk }">{{getShipDescription(ship.Content)}}</li>
+            </ul>
+        </section>
+        <section layout="column" flex="25" layout-align="left center">
+            <grid class="computer" table="$root.models.Computer.Grid" computer="true" disabled="$root.models.GameFinished"></grid>
+            <ul>
+                <li class="title">{{labels.computerShips}}</li>
+                <li ng-repeat="ship in $root.models.Computer.Ships"
+                    ng-class="{ 'sunk': ship.Sunk }">{{getShipDescription(ship.Content)}}</li>
+            </ul>
+        </section>
+        <section layout="column" flex="25" layout-align="right center"></section>
+    </section>
+    <section layout="row" layout-align="center center" ng-if="$root.models.GameFinished">
+        <h1 ng-show="$root.models.Computer.AllShipsSunk">{{labels.playerWins}}</h1>
+        <h1 ng-show="$root.models.Player.AllShipsSunk">{{labels.computerWins}}</h1>
+    </section>
+</div>

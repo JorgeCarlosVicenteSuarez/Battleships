@@ -1,0 +1,62 @@
+﻿h1 {
+    width: 100%;
+    margin: auto auto;
+    text-align: center;
+}
+
+.grid {
+    display: inline-block;
+    font-size: 1vw;
+}
+
+.grid.user {
+    pointer-events: none;
+}
+
+.grid th,
+.grid td {
+    vertical-align: middle;
+    border: 1px solid black;
+    text-align: center;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.grid th {
+    pointer-events: none;
+}
+
+.grid.computer td:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+}
+
+.grid td.discovered {
+    pointer-events: none;
+    background-color: lightblue;
+}
+
+.grid td.hit {
+    pointer-events: none;
+    color: white;
+    background-color: red;
+}
+
+ul li {
+    list-style-type: none;
+    color: black;
+    background: white;
+}
+
+ul li.title {
+    color: black;
+    font-weight: bolder;
+    padding-bottom: .3vw;
+    text-decoration: underline;
+    background: white;
+}
+
+ul li.sunk {
+    color: white;
+    background: red;
+}

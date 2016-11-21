@@ -1,0 +1,9 @@
+C:\Malakala\BattleShips\BattleShips.Logic\bin\Debug\BattleShips.Logic.dll
+C:\Malakala\BattleShips\BattleShips.Logic\bin\Debug\BattleShips.Logic.pdb
+C:\Malakala\BattleShips\BattleShips.Logic\obj\Debug\BattleShips.Logic.csprojResolveAssemblyReference.cache
+C:\Malakala\BattleShips\BattleShips.Logic\obj\Debug\BattleShips.Logic.dll
+C:\Malakala\BattleShips\BattleShips.Logic\obj\Debug\BattleShips.Logic.pdb
+C:\Jorge_Temp\BattleShips\BattleShips\BattleShips.Logic\bin\Debug\BattleShips.Logic.dll
+C:\Jorge_Temp\BattleShips\BattleShips\BattleShips.Logic\bin\Debug\BattleShips.Logic.pdb
+C:\Jorge_Temp\BattleShips\BattleShips\BattleShips.Logic\obj\Debug\BattleShips.Logic.dll
+C:\Jorge_Temp\BattleShips\BattleShips\BattleShips.Logic\obj\Debug\BattleShips.Logic.pdb

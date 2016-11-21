@@ -1,0 +1,15 @@
+﻿<table class="grid">
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th ng-repeat="col in columns">{{col}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="row in rows">
+            <th>{{row}}</th>
+            <td ng-repeat-end="" ng-repeat="col in rows" ng-click="shoot(row-1, col-1)"
+                ng-class="{ 'discovered': isDiscovered(row-1, col-1), 'hit': isHit(row-1, col-1)}">{{cell(row-1, col-1)}}</td>
+        </tr>
+    </tbody>
+</table>
